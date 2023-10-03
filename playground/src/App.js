@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Editando el parrafo inicial
+          Texto agregado desde Visual
         </p>
         <a
           className="App-link"
