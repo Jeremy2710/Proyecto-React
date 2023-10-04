@@ -4,7 +4,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div className='Navbar'>
-        <img src='./favicon.ico' width={35} height={35} ></img>
+        <img src='./planetaninez.ico' width={35} height={35} ></img>
     </div>
   )
 }
