@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 
 
-function Servicios() {
+function Servicios(img, info) {
 
 
 
@@ -20,7 +20,7 @@ function Servicios() {
                     <Col xs={3}>
                         <div>
                             <img src="" alt="" />
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et repudiandae aliquam quibusdam, totam excepturi qui voluptas deleniti odio deserunt vel?</p>
+                            <p>{info}</p>
                         </div>
                     </Col>
                 </Row>
