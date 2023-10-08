@@ -1,4 +1,7 @@
 import React from "react";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function Servicios() {
 
@@ -7,8 +10,19 @@ function Servicios() {
 
     return (
         <div>
-            <img src="" alt="" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quis asperiores esse itaque atque, repudiandae saepe quos vel ipsam quo ipsum ratione odit. Asperiores excepturi illum distinctio enim sed iusto.</p>
+            <Container>
+
+                <h2>Servicios</h2>
+                <Row>
+
+                    <Col>
+                    </Col>
+                </Row>
+            </Container>
+
+
+
+
 
 
         </div>
