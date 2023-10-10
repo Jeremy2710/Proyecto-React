@@ -1,31 +1,31 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-
-
-function Servicios(img, info) {
+import Image from "next/image";
 
 
 
+
+
+function Servicios(key, imagen, info) {
+
+
+console.log("Servicios",imagen);
 
     return (
         <div>
-            <Container>
+            <div className="Container">
 
                 <h2>Servicios</h2>
-                <Row>
+                <div className="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
 
-                    <Col xs={3}>
+                    <div className="col">
                         <div>
-                            <img src="" alt="" />
+                            <Image src={imagen} alt="" width={100} height={100} />
                             <p>{info}</p>
                         </div>
-                    </Col>
-                </Row>
-            </Container>
-
+                    </div>
+                </div>
+            </div>
+{/* 
             <Container>
                 <Row>
                     <Col xs={12} sm={4}>
@@ -46,7 +46,7 @@ function Servicios(img, info) {
                         </Card>
                     </Col>
                 </Row>
-            </Container>
+            </Container> */}
 
 
 
