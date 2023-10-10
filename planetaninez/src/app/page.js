@@ -1,6 +1,6 @@
-import UncontrolledCarrousel from './components/Carrousel/UncontrolledCarrousel';
 import Navbar from './components/Navbar'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import UncontrolledCarrousel from './components/Carrousel/UncontrolledCarrousel';
 
 export default function Home() {
   return (
