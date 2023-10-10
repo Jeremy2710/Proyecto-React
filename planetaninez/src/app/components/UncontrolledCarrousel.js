@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
-import Ocean from '../../../../public/oceano.jpg';
-import Tormenta from '../../../../public/tormenta.jpg';
-import ViaLactea from '../../../../public/vialactea.jpg';
+import Ocean from '../../../public/oceano.jpg';
+import Tormenta from '../../../public/tormenta.jpg';
+import ViaLactea from '../../../public/vialactea.jpg';
 
 function UncontrolledCarrousel() {
   return (
