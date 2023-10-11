@@ -79,24 +79,25 @@ img {
 /* SERVICIOS */
 
 #servicios {
-  padding: 1em;
+  padding: 1em 0;
 }
 
 #servicios h2 {
   text-align: center;
-  
+
 }
 
-.card-grid {
+.card-iconos-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 50px;
   grid-row-gap: 0px;
+  margin-bottom: 3em;
 }
 
-.card-iconos p{
- margin-top: 1em;
+.card-iconos p {
+  margin-top: 1em;
 }
 
 .card-iconos {
@@ -107,6 +108,51 @@ img {
   border-radius: 20px;
   border: 1px solid #000;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.card-pases-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
+}
+
+.card-pases {
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  height: 400px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.card-pases h3 {
+  text-align: center;
+  padding: 1em;
+  background-color: #aedbff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 20px 20px 0 0;
+
+}
+
+.boton-pases {
+  text-align: center;
+  padding: 1em;
+  position: absolute;
+  bottom: 5%;
+  right: 32%;
+}
+
+.boton-pases a {
+  text-decoration: none;
+  background-color: #aedbff;
+  padding: 1em;
+  border-radius: 12px;
+  color: #477397;
+  font-weight: bold;
+  text-transform: uppercase;
+
 }
 
 @media (prefers-color-scheme: dark) {

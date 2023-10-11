@@ -1,15 +1,27 @@
 import React from "react";
 import Image from "next/image";
+import BotonTarjetas from '../components/BotonTarjetas'
 
 function TarjetasServicios(props) {
 
-    const { info2 } = props
+    const { titulo, info } = props
 
     return (
 
 
-        <div className="card-iconos">
-            <p>{info2}</p>
+        <div className="card-pases">
+            <h3>{titulo}</h3>
+            <ul>
+                <li>{info}</li>
+                <li>{info}</li>
+                <li>{info}</li>
+                <li>{info}</li>
+                <li>{info}</li>
+              
+
+            </ul>
+
+            <BotonTarjetas />
         </div>
 
     )
