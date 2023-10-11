@@ -5,19 +5,18 @@ import Image from "next/image";
 
 
 
-function Servicios(key, imagen, info) {
+function Servicios(props) {
 
-
-console.log("Servicios",imagen);
+    const { imagen, info } = props
 
     return (
         <div>
-            <div className="Container">
+            <div>
 
-                <h2>Servicios</h2>
-                <div className="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
 
-                    <div className="col">
+                <div>
+
+                    <div>
                         <div>
                             <Image src={imagen} alt="" width={100} height={100} />
                             <p>{info}</p>
@@ -25,7 +24,7 @@ console.log("Servicios",imagen);
                     </div>
                 </div>
             </div>
-{/* 
+            {/* 
             <Container>
                 <Row>
                     <Col xs={12} sm={4}>
