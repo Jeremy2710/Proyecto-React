@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.scss'
-import Navbar from './components/Navbar'
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 import Servicios from './components/Servicios'
 import TarjetasServicios from './components/Tarjetaservicios'
 import icono1 from '../../public/icono1.png'
@@ -29,7 +30,7 @@ export default function Home() {
 
   return (
     <main>
-      <Navbar />
+      <NavBar />
       <div>
         <p>
           Bueno por aqui empezamos
@@ -68,6 +69,9 @@ export default function Home() {
 
 
 
+      </section>
+      <section>
+        <Footer/>
       </section>
     </main>
   )
