@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import BotonTarjetas from '../components/BotonTarjetas'
+
 
 function TarjetasServicios(props) {
 
@@ -20,7 +20,7 @@ function TarjetasServicios(props) {
                     <p><span>$</span>{precio}</p>
                     <p className="precio-info">Por persona</p>
                 </div>
-                
+
                 <div className="tarjeta-items">
                     <ul>
                         <li>{info}</li>
@@ -32,28 +32,11 @@ function TarjetasServicios(props) {
                 </div>
 
                 <div className="tarjeta-boton">
-                    <a href="#" className="bottom"><p className="cart">Añadir al carrito</p></a>
+                    <a href="#" className="bottom">Añadir al carrito</a>
                 </div>
             </div>
 
-            {/* <h3>{titulo}</h3>
-            <ul>
-                <li>{info}</li>
-                <li>{info}</li>
-                <li>{info}</li>
-                <li>{info}</li>
-                <li>{info}</li>
-
-
-            </ul>
-
-            <BotonTarjetas /> */}
         </div>
-
-
-
-
-
     )
 }
 

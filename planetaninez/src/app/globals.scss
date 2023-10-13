@@ -103,11 +103,8 @@ img {
 .card-iconos {
   text-align: center;
   padding: 1em;
-  margin-top: 2em;
-  background-color: #aedbff;
-  border-radius: 20px;
-  border: 1px solid #000;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-top: 2em;  
+  
 }
 
 .card-pases-grid {
@@ -118,32 +115,10 @@ img {
   grid-row-gap: 0px;
 }
 
-.boton-pases {
-  text-align: center;
-  padding: 1em;
-  position: absolute;
-  bottom: 5%;
-  right: 32%;
-}
-
-.boton-pases a {
-  text-decoration: none;
-  background-color: #aedbff;
-  padding: 1em;
-  border-radius: 12px;
-  color: #477397;
-  font-weight: bold;
-  text-transform: uppercase;
-
-}
-
 .titulo {
-  width: 300px;
   border-radius: 5px 5px 0px 0px;
-  background-color: #eac80d;
-  height: 62px;
-  border-bottom: 3px solid #bfa30c;
-
+  background-color: #e0c213;
+  border-bottom: 3px solid #9c870c;
 }
 
 .titulo p {
@@ -156,12 +131,38 @@ img {
 
 }
 
-a {
-  font-size: 18px;
+#standard {
+  background-color: #1abc9c;
+  border-bottom: 3px solid #18937b;
+}
 
-  color: white;
-  text-decoration: none;
+#premium {
+  background-color: #5d6a9a;
+  border-bottom: 3px solid #474f6f;
+}
 
+.tarjeta-info {
+  background-color: #2b2937;
+  border-radius: 0px 0px 5px 5px;
+  color: #fff;
+  text-align: center;
+}
+
+.precio {
+  border-bottom: 1px solid #494a5a;
+  padding-bottom: 39px;
+  font-size: 4.5em;
+}
+
+.precio span {
+  font-size: 32px;
+}
+
+.precio-info {
+  font-size: 14px;
+  color: #d5f4f8;
+  padding: 0px;
+  margin: -10px;
 }
 
 .tarjeta-items ul {
@@ -178,59 +179,23 @@ a {
   padding: 0px;
   margin: 0px;
   text-align: center;
-  height: 52px;
-  line-height: 52px;
-}
-
-
-
-.tarjeta-info {
-  width: 300px;
-  background-color: #2b2937;
-  border-radius: 0px 0px 5px 5px;
-  font-style: condensed;
-  font-size: 90px;
-  color: white;
-  text-align: center;
-
-}
-
-#standard {
-  background-color: #1abc9c;
-  border-bottom: 3px solid #18937b;
-}
-
-#premium {
-  background-color: #5d6a9a;
-  border-bottom: 3px solid #474f6f;
-}
-
-.precio {
-  border-bottom: 1px solid #494a5a;
-  padding-bottom: 39px;
-}
-
-.precio span {
-  font-size: 32px;
-}
-
-.precio-info {
-  font-size: 14px;
-  color: #d5f4f8;
-  padding: 0px;
-  margin: -10px;
+  line-height: 60px;
 }
 
 .tarjeta-boton {
-  height: 80px;
+  height: 70px;
 }
 
-.cart {
-
-  color: white;
+.tarjeta-boton a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
   position: relative;
   top: 16px;
+}
 
+.tarjeta-boton a:hover {
+  color: #26ebc3;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -14,16 +14,16 @@ import icono4 from '../../public/icono4.png'
 export default function Home() {
 
   const servicioiconos = [
-    { id: "icono1", img: icono1, info: "Contamos con una gran variedad juegos para divertirse en familia." },
+    { id: "icono1", img: icono1, info: "Contamos con una gran variedad de juegos para divertirse en familia" },
     { id: "icono2", img: icono3, info: "Puedes canjear tus tickets y llevarte increibles premios" },
-    { id: "icono3", img: icono2, info: "Lleva tu tarjeta a todas nuestras sucursales y seguir disfrutando de nuestro juegos" },
-    { id: "icono4", img: icono4, info: "Dentro del establecimiento, tenemos locales de comida rapida con un amplio menú" }
+    { id: "icono3", img: icono2, info: "Lleva tu tarjeta a cualquier sucursal para seguir disfrutando de nuestro juegos" },
+    { id: "icono4", img: icono4, info: "Dentro del establecimiento, tenemos locales de comida rápida con un amplio menú" }
   ];
 
   const tarjetainfo = [
-    { id: "tarjeta1", precio: 2000, titulo: "simple", info: "15 cargas para juegos", info2: "1 entrada a la montaña rusa", info3: "1 vuelta en los autitos chocadores", info4: "1 bebida a elección" },
-    { id: "tarjeta2", precio: 3500, titulo: "standard", info: "25 cargas para juegos", info2: "2 entradas a la montaña rusa", info3: "2 vueltas en los autitos chocadores", info4: "2 bebidas a elección" },
-    { id: "tarjeta3", precio: 5000, titulo: "premium", info: "40 cargas para juegos", info2: "2 entradas a la montaña rusa", info3: "2 vueltas en los autitos chocadores", info4: "3 bebidas a elección" },
+    { id: "tarjeta1", precio: "4.000", titulo: "simple", info: "15 cargas para juegos", info2: "1 pase a la montaña rusa", info3: "1 pase a los autitos chocadores", info4: "1 bebida a elección" },
+    { id: "tarjeta2", precio: "7.500", titulo: "standard", info: "25 cargas para juegos", info2: "2 pases a la montaña rusa", info3: "2 pases a los autitos chocadores", info4: "2 bebidas a elección" },
+    { id: "tarjeta3", precio: "10.000", titulo: "premium", info: "40 cargas para juegos", info2: "2 pases a la montaña rusa", info3: "2 pases a los autitos chocadores", info4: "3 bebidas a elección" },
   ];
 
 
