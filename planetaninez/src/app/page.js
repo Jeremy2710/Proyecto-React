@@ -21,9 +21,9 @@ export default function Home() {
   ];
 
   const tarjetainfo = [
-    { id: "tarjeta1", titulo: "Pase de plata", info: "dsdsadsad" },
-    { id: "tarjeta2", titulo: "Pase de oro", info: "sadsadsadsadsadsdsd" },
-    { id: "tarjeta3", titulo: "Pase de diamante", info: "dsasdsadsadsad" },
+    { id: "tarjeta1", precio: 2000, titulo: "simple", info: "15 cargas para juegos", info2: "1 entrada a la montaña rusa", info3: "1 vuelta en los autitos chocadores", info4: "1 bebida a elección" },
+    { id: "tarjeta2", precio: 3500, titulo: "standard", info: "25 cargas para juegos", info2: "2 entradas a la montaña rusa", info3: "2 vueltas en los autitos chocadores", info4: "2 bebidas a elección" },
+    { id: "tarjeta3", precio: 5000, titulo: "premium", info: "40 cargas para juegos", info2: "2 entradas a la montaña rusa", info3: "2 vueltas en los autitos chocadores", info4: "3 bebidas a elección" },
   ];
 
 
@@ -55,18 +55,17 @@ export default function Home() {
 
         <div className='card-pases-grid'>
 
-        {
+          {
             tarjetainfo.map((tarjetas) => (
               <>
 
-                <TarjetasServicios key={tarjetas.id} titulo={tarjetas.titulo} info={tarjetas.info} />
+                <TarjetasServicios key={tarjetas.id} titulo={tarjetas.titulo} info={tarjetas.info} info2={tarjetas.info2} info3={tarjetas.info3} info4={tarjetas.info4} precio={tarjetas.precio} />
               </>
             ))
 
           }
 
         </div>
-
 
 
       </section>

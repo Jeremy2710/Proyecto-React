@@ -4,25 +4,55 @@ import BotonTarjetas from '../components/BotonTarjetas'
 
 function TarjetasServicios(props) {
 
-    const { titulo, info } = props
+    const { titulo, info, info2, info3, info4, precio } = props
 
     return (
 
 
-        <div className="card-pases">
-            <h3>{titulo}</h3>
+        <div className="tarjetas-pases">
+
+            <div className="titulo" id={titulo}>
+                <p>{titulo}</p>
+            </div>
+            <div className="tarjeta-info">
+
+                <div className="precio">
+                    <p><span>$</span>{precio}</p>
+                    <p className="precio-info">Por persona</p>
+                </div>
+                
+                <div className="tarjeta-items">
+                    <ul>
+                        <li>{info}</li>
+                        <li>{info2}</li>
+                        <li>{info3}</li>
+                        <li>{info4}</li>
+                    </ul>
+
+                </div>
+
+                <div className="tarjeta-boton">
+                    <a href="#" className="bottom"><p className="cart">Añadir al carrito</p></a>
+                </div>
+            </div>
+
+            {/* <h3>{titulo}</h3>
             <ul>
                 <li>{info}</li>
                 <li>{info}</li>
                 <li>{info}</li>
                 <li>{info}</li>
                 <li>{info}</li>
-              
+
 
             </ul>
 
-            <BotonTarjetas />
+            <BotonTarjetas /> */}
         </div>
+
+
+
+
 
     )
 }
