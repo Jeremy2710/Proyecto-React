@@ -32,7 +32,7 @@ function TarjetasServicios(props) {
                 </div>
 
                 <div className="tarjeta-boton">
-                    <a href="#" className="bottom">Añadir al carrito</a>
+                    <a href="#">Añadir al carrito</a>
                 </div>
             </div>
 
