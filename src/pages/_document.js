@@ -1,0 +1,15 @@
+import FlyerPage from '../../Proyecto-React/Componentes/FlyerPage'
+import { Html, Head, Main, NextScript } from 'next/document'
+
+export default function Document() {
+  return (
+    <Html lang="en">
+      <Head />
+      <body>
+        <Main />
+        <NextScript />
+        <FlyerPage />
+      </body>
+    </Html>
+  )
+}
