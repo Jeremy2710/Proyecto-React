@@ -9,7 +9,7 @@ function TarjetasServicios(props) {
     return (
 
 
-        <div className="tarjetas-pases">
+        <div className="tarjeta-pases">
 
             <div className="titulo" id={titulo}>
                 <p>{titulo}</p>
