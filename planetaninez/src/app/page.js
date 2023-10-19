@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import styles from './page.module.scss'
 import Navbar from './components/Navbar'
-import Servicios from './components/Servicios'
-import TarjetasServicios from './components/Tarjetaservicios'
+import Servicios from './components/Servicios/Servicios'
+import TarjetasServicios from './components/TarjetasServicios/Tarjetaservicios'
 
 import icono1 from '../../public/icono1.png'
 import icono2 from '../../public/icono2.png'

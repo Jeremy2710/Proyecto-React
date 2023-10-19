@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import Style from "./tarjetasServicios.module.css"
 
 function TarjetasServicios(props) {
 
@@ -9,19 +9,19 @@ function TarjetasServicios(props) {
     return (
 
 
-        <div className="tarjeta-pases">
+        <div className={Style.tarjeta_pases}>
 
-            <div className="titulo" id={titulo}>
+            <div className={Style.titulo} id={titulo}>
                 <p>{titulo}</p>
             </div>
-            <div className="tarjeta-info">
+            <div className= {Style.tarjeta_info}>
 
-                <div className="precio">
+                <div className= {Style.precio}>
                     <p><span>$</span>{precio}</p>
-                    <p className="precio-info">Por persona</p>
+                    <p className= {Style.precio_info}>Por persona</p>
                 </div>
 
-                <div className="tarjeta-items">
+                <div className= {Style.tarjeta_items}>
                     <ul>
                         <li>{info}</li>
                         <li>{info2}</li>
@@ -31,8 +31,8 @@ function TarjetasServicios(props) {
 
                 </div>
 
-                <div className="tarjeta-boton">
-                    <a href="#">Añadir al carrito</a>
+                <div className= {Style.tarjeta_boton}>
+                    <a href="#">Añadir al carro</a>
                 </div>
             </div>
 

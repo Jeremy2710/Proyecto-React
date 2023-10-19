@@ -1,0 +1,121 @@
+.card_pases_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+}
+
+.tarjeta_pases {
+    margin: 1em 6em;
+
+}
+
+.titulo {
+    border-radius: 5px 5px 0px 0px;
+    background-color: #e0c213;
+    border-bottom: 3px solid #9c870c;
+}
+
+.titulo p {
+    font-weight: 800;
+    font-size: 29px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+#standard {
+    background-color: #1abc9c;
+    border-bottom: 3px solid #18937b;
+}
+
+#premium {
+    background-color: #5d6a9a;
+    border-bottom: 3px solid #474f6f;
+}
+
+.tarjeta_info {
+    background-color: #2b2937;
+    border-radius: 0px 0px 5px 5px;
+    color: #fff;
+    text-align: center;
+}
+
+.precio {
+    border-bottom: 1px solid #494a5a;
+    padding-bottom: 39px;
+    font-size: 4em;
+}
+
+.precio span {
+    font-size: .5em;
+}
+
+.precio_info {
+    font-size: 14px;
+    color: #d5f4f8;
+    padding: 0px;
+    margin: -10px;
+}
+
+.tarjeta_items ul {
+    list-style: none;
+    font-size: 15px;
+    color: #9095aa;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.tarjeta_items li {
+    border-bottom: 1px solid #494a5a;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.tarjeta_boton {
+    height: 70px;
+}
+
+.tarjeta_boton a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 16px;
+}
+
+.tarjeta_boton a:hover {
+    color: #26ebc3;
+}
+
+@media screen and (max-width: 600px) {
+
+    .tarjeta_pases {
+        margin: 1em 3em;
+
+    }
+}
+
+@media screen and (min-width: 901px) {
+
+    .card_pases_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 0px;
+    }
+
+    .tarjeta_pases {
+        margin: 0;
+
+    }
+
+
+}

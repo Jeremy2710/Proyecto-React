@@ -87,25 +87,6 @@ img {
 
 }
 
-.card-iconos-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 0px;
-  margin: 1em;
-
-}
-
-.card-iconos p {
-  padding-top: 1em;
-  margin: 0 4em;
-}
-
-.card-iconos {
-  text-align: center;
-
-}
 
 .card-pases-grid {
   display: grid;
@@ -115,93 +96,16 @@ img {
   grid-row-gap: 0px;
 }
 
-.tarjeta-pases {
-  margin: 1em 6em;
-  
-}
-
-.titulo {
-  border-radius: 5px 5px 0px 0px;
-  background-color: #e0c213;
-  border-bottom: 3px solid #9c870c;
-}
-
-.titulo p {
-  font-weight: 800;
-  font-size: 29px;
-  text-transform: uppercase;
-  color: white;
-  text-align: center;
-  padding-top: 10px;
+.card_iconos_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  margin: 1em;
 
 }
 
-#standard {
-  background-color: #1abc9c;
-  border-bottom: 3px solid #18937b;
-}
-
-#premium {
-  background-color: #5d6a9a;
-  border-bottom: 3px solid #474f6f;
-}
-
-.tarjeta-info {
-  background-color: #2b2937;
-  border-radius: 0px 0px 5px 5px;
-  color: #fff;
-  text-align: center;
-}
-
-.precio {
-  border-bottom: 1px solid #494a5a;
-  padding-bottom: 39px;
-  font-size: 4em;
-}
-
-.precio span {
-  font-size: .5em;
-}
-
-.precio-info {
-  font-size: 14px;
-  color: #d5f4f8;
-  padding: 0px;
-  margin: -10px;
-}
-
-.tarjeta-items ul {
-  list-style: none;
-  font-size: 15px;
-  color: #9095aa;
-  padding: 0px;
-  margin: 0px;
-}
-
-
-.tarjeta-items li {
-  border-bottom: 1px solid #494a5a;
-  padding: 0px;
-  margin: 0px;
-  text-align: center;
-  line-height: 60px;
-}
-
-.tarjeta-boton {
-  height: 70px;
-}
-
-.tarjeta-boton a {
-  font-size: 18px;
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-  top: 16px;
-}
-
-.tarjeta-boton a:hover {
-  color: #26ebc3;
-}
 
 @media screen and (max-width: 600px) {
 
@@ -211,7 +115,7 @@ img {
 
   .tarjeta-pases {
     margin: 1em 3em;
-  
+
   }
 }
 
@@ -244,7 +148,7 @@ img {
 
   .tarjeta-pases {
     margin: 0;
-  
+
   }
 
 
