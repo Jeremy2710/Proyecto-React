@@ -1,13 +1,15 @@
-import Navbar from './components/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import UncontrolledCarrousel from './components/UncontrolledCarrousel';
+import Testimonials from './components/Testimonials'
+import BetaCarrousel from './components/Carrousel/page'
+import Navbar from './components/NavbarContainer/Navbar'
 
 export default function Home() {
   return (
     <main>
       <Navbar/>
-      <UncontrolledCarrousel/>
+      <BetaCarrousel/>
       <div>
+        <Testimonials/>
         <p>
           Bueno por aqui empezamos
         </p>
