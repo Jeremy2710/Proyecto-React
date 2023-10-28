@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 
 const Flyer = ({ image, title, description }) => {
 
@@ -9,7 +10,7 @@ const Flyer = ({ image, title, description }) => {
             alignItems: 'center',
             backgroundColor: 'cyan'
         },
-        img: {
+        imgDiv: {
             height: '100%',
             width: '30%',
             padding: '5px',
@@ -19,6 +20,7 @@ const Flyer = ({ image, title, description }) => {
             alignItems: 'center',
             border: '2px solid cyan',
             borderRadius: '10px',
+
 
         },
         content: {
@@ -32,12 +34,16 @@ const Flyer = ({ image, title, description }) => {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'space-around',
+        },
+        img: {
+            height: '100%',
+            width: '100%',
         }
     }
     return (
         <div className="flyer" style={estilos.container}>
-            <div className="Imagen" style={estilos.img}>
-                <img src={image} alt={title} />
+            <div className="Imagen" style={estilos.imgDiv}>
+                <Image src={image} alt={title} style={estilos.img} />
             </div>
 
             <div className='container-content' style={estilos.content}>
