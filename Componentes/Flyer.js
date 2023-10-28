@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 
+
 const Flyer = ({ image, title, description }) => {
 
     const estilos = {
@@ -8,24 +9,23 @@ const Flyer = ({ image, title, description }) => {
             display: 'flex',
             height: '100%',
             alignItems: 'center',
-            backgroundColor: 'cyan'
+            backgroundColor: 'rgb(15, 219, 15)'
         },
         imgDiv: {
             height: '100%',
             width: '30%',
-            padding: '5px',
             backgroundColor: 'white',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            border: '2px solid cyan',
+            border: '2px solid rgb(15, 219, 15)',
             borderRadius: '10px',
-
+            overflow: 'hidden',
 
         },
         content: {
             backgroundColor: 'white',
-            border: '2px solid cyan',
+            border: '2px solid rgb(15, 219, 15)',
             borderRadius: '10px',
             height: '100%',
             width: '70%',
@@ -33,11 +33,14 @@ const Flyer = ({ image, title, description }) => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            justifyContent: 'space-around',
+            justifyContent: 'center',
+
         },
         img: {
             height: '100%',
             width: '100%',
+            borderRadius: '10px',
+            objectFit: 'cover',
         }
     }
     return (
@@ -48,6 +51,7 @@ const Flyer = ({ image, title, description }) => {
 
             <div className='container-content' style={estilos.content}>
                 <h2>{title}</h2>
+                <p>...</p>
                 <p>{description}</p>
             </div>
 
