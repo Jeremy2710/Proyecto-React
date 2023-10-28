@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from "next/image";
+
 
 const Flyer = ({ image, title, description }) => {
 
@@ -7,23 +9,23 @@ const Flyer = ({ image, title, description }) => {
             display: 'flex',
             height: '100%',
             alignItems: 'center',
-            backgroundColor: 'cyan'
+            backgroundColor: 'rgb(15, 219, 15)'
         },
-        img: {
+        imgDiv: {
             height: '100%',
             width: '30%',
-            padding: '5px',
             backgroundColor: 'white',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            border: '2px solid cyan',
+            border: '2px solid rgb(15, 219, 15)',
             borderRadius: '10px',
+            overflow: 'hidden',
 
         },
         content: {
             backgroundColor: 'white',
-            border: '2px solid cyan',
+            border: '2px solid rgb(15, 219, 15)',
             borderRadius: '10px',
             height: '100%',
             width: '70%',
@@ -31,17 +33,25 @@ const Flyer = ({ image, title, description }) => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            justifyContent: 'space-around',
+            justifyContent: 'center',
+
+        },
+        img: {
+            height: '100%',
+            width: '100%',
+            borderRadius: '10px',
+            objectFit: 'cover',
         }
     }
     return (
         <div className="flyer" style={estilos.container}>
-            <div className="Imagen" style={estilos.img}>
-                <img src={image} alt={title} />
+            <div className="Imagen" style={estilos.imgDiv}>
+                <Image src={image} alt={title} style={estilos.img} />
             </div>
 
             <div className='container-content' style={estilos.content}>
                 <h2>{title}</h2>
+                <p>...</p>
                 <p>{description}</p>
             </div>
 

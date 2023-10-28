@@ -5,7 +5,7 @@ const FlyerContainer = () => {
 
     const estilos = {
         height: '100vh',
-        backgroundColor: '',
+        backgroundColor: 'rgb(234, 229, 229)',
         color: '',
         display: 'flex',
         alignItems: 'center',
