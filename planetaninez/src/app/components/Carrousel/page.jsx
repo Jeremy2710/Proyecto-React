@@ -9,20 +9,20 @@ import { Carousel } from 'react-responsive-carousel';
 function BetaCarrousel() {
     return (
       <Carousel autoPlay infiniteLoop interval={2000} showThumbs={false}>
-            <div>
-            <Image src="/images/vialactea.jpg" width={100} height={200} />
-            <p className="imagen1">Leyenda 1</p>
-            </div>
-            <div>
-            <Image src="/images/tormenta.jpg" width={100} height={200}/>
-            <p className="imagen2">Leyenda 2</p>
-            </div>
-            <div>
-            <Image src="/images/oceano.jpg" width={100}height={200}/>
-            <p className="imagen3">Leyenda 3</p>
-            </div>
+        <div>
+          <Image src="/images/nueces_1.webp" width={800} height={600} style={{objectFit: "cover"}} />
+          {/* <p className="legend">Leyenda 1</p> */}
+        </div>
+        <div>
+          <Image src="/images/flowers_1.webp" width={800} height={600} style={{objectFit: "cover"}}	/>
+          {/* <p className="legend">Leyenda 2</p> */}
+        </div>
+        <div>
+          <Image src="/images/forest_1.webp" width={800} height={600}style={{objectFit: "cover"}} />
+          {/* <p className="legend">Leyenda 3</p> */}
+        </div>
       </Carousel>
-    )
+    );
 
 }
 

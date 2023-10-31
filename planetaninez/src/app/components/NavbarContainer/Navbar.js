@@ -3,8 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import '../../globals.scss'
 
-
-
 const Navbar = () => {
   return (
     <div className='Navbar'>
