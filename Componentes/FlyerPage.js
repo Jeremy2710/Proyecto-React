@@ -49,7 +49,7 @@ const FlyerPage = () => {
             <div className={style.buttonContainer}>
                 {flyersData.map((_, index) => (
                     <button className={style.botones} key={index} onClick={() => handleSelectFlyer(index)}>
-                        &rarr;{  /* {index + 1} */}
+                        <p>GO!</p>{/* &rarr; */}{  /* {index + 1} */}
                     </button>
                 ))}
             </div>

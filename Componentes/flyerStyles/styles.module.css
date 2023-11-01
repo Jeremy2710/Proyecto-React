@@ -13,45 +13,41 @@
 .general {
   width: 70%;
   height: 80%;
-  border: 2px solid rgb(15, 219, 15);
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  background-color: rgb(15, 219, 15);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .buttonContainer {
-  border-radius: 10px;
-  height: 20%;
+  height: 10%;
   width: 100%;
   display: flex;
-  background-color: rgba(23, 192, 23, 0.585);
-  align-items: center;
+  align-items: start;
   justify-content: space-around;
+  margin-top: 20px;
 }
 .flyer {
   height: 80%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  border: 2px solid cyan;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 .botones {
   border-radius: 50%;
-  border: 4px solid rgb(29, 101, 29);
+  border: 2px solid cyan;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   width: 60px;
   height: 60px;
-  background-color: rgba(255, 247, 0, 0.825);
+  background-color: white;
   font-size: 20px;
   cursor: pointer;
   transition: 0.3s;
 }
 .botones:hover {
-  transform: scale(1.5);
-  background-color: rgba(101, 255, 255, 0.599);
+  transform: scale(1.4);
   border: none;
-  background-color: rgb(29, 101, 29);
+  background-color: cyan;
   font-size: 0%;
 }
 /* ************** FLYER ************** */
@@ -59,36 +55,76 @@
 .container {
   display: flex;
   height: 100%;
-  align-items: center;
-  background-color: rgb(15, 219, 15);
+  background-color: cyan;
 }
 .imgDiv {
   height: 100%;
   width: 30%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid rgb(15, 219, 15);
   border-radius: 10px;
   overflow: hidden;
 }
 
-.img {
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-}
 .content {
   background-color: white;
-  border: 2px solid rgb(15, 219, 15);
+  margin-left: 3px;
   border-radius: 10px;
   height: 100%;
   width: 70%;
-  padding: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30%;
+  width: 70%;
+  text-align: center;
+}
+
+/* ************************************ RESPONSIVE ************************************ */
+
+@media screen and (max-width: 800px) {
+  /* ************** FLYER-PAGE ************** */
+
+  .general {
+    width: 80%;
+    height: 90%;
+    flex-direction: row;
+  }
+  .buttonContainer {
+    height: 100%;
+    width: 20%;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .flyer {
+    height: 100%;
+  }
+  .botones:hover {
+    transform: scale(1.1);
+  }
+  /* ************** FLYER ************** */
+
+  .container {
+    flex-direction: column;
+  }
+  .imgDiv {
+    height: 40%;
+    width: 100%;
+  }
+
+  .content {
+    margin-top: 3px;
+    margin-left: 0;
+    height: 60%;
+    width: 100%;
+  }
+
+  .text {
+    height: 50%;
+    width: 70%;
+  }
 }
