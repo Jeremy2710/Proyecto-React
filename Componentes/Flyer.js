@@ -20,9 +20,15 @@ const Flyer = ({ image, title, description }) => {
             </div>
 
             <div className={style.content}>
-                <h2>{title}</h2>
-                <p>...</p>
-                <p>{description}</p>
+                
+                <div className={style.text}>
+                    
+                        <h2>{title}</h2>
+                         <p>...</p>
+                        <p>{description}</p>
+                    
+                </div>
+                
             </div>
 
         </div>
