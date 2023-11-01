@@ -1,18 +1,12 @@
 import React from 'react'
 import FlyerPage from './FlyerPage'
+import style from './flyerStyles/styles.module.css'
+
 
 const FlyerContainer = () => {
 
-    const estilos = {
-        height: '100vh',
-        backgroundColor: 'rgb(234, 229, 229)',
-        color: '',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-    }
     return (
-        <div style={estilos}>
+        <div className={style.flyerContainer}>
             <FlyerPage />
         </div>
 

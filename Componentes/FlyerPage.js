@@ -3,6 +3,7 @@ import Flyer from './Flyer';
 import img1 from '../public/funnyZone.jpeg'
 import img2 from '../public/eatZone.jpg'
 import img3 from '../public/waitZone.jpg'
+import style from './flyerStyles/styles.module.css'
 
 const flyersData = [
     {
@@ -22,50 +23,11 @@ const flyersData = [
     },
 ];
 
-//pendiente: Hover e Imagen.
+
 
 const FlyerPage = () => {
 
-    const estilos = {
-        general: {
-            width: '70%',
-            height: '80%',
-            border: '2px solid rgb(15, 219, 15)',
-            borderRadius: '10px',
-            boxShadow: '5px 5px 10px rgba(0, 0, 0, 0.3)',
-            backgroundColor: 'rgb(15, 219, 15)',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-        },
-        buttonContainer: {
-
-            borderRadius: '10px',
-            height: '20%',
-            width: '100%',
-            display: 'flex',
-            backgroundColor: 'rgba(23, 192, 23, 0.585)',
-            alignItems: 'center',
-            justifyContent: 'space-around'
-        },
-        flyer: {
-            height: '80%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-        },
-        botones: {
-            borderRadius: '50%',
-            border: '4px solid rgb(29, 101, 29)',
-            width: '60px',
-            height: '60px',
-            backgroundColor: 'rgba(255, 247, 0, 0.825)',
-            fontSize: '20px',
-            cursor: 'pointer'
-        }
-
-    }
+    
 
     const [selectedFlyerIndex, setSelectedFlyerIndex] = useState(0);
 
@@ -75,8 +37,8 @@ const FlyerPage = () => {
 
     return (
 
-        <div className="flyer-page" style={estilos.general}>
-            <div className='container-Flyer' style={estilos.flyer}>
+        <div className={style.general}>
+            <div className={style.flyer}>
                 <Flyer
                     image={flyersData[selectedFlyerIndex].image}
                     title={flyersData[selectedFlyerIndex].title}
@@ -84,9 +46,9 @@ const FlyerPage = () => {
                 />
             </div>
 
-            <div className="flyer-buttons" style={estilos.buttonContainer}>
+            <div className={style.buttonContainer}>
                 {flyersData.map((_, index) => (
-                    <button style={estilos.botones} key={index} onClick={() => handleSelectFlyer(index)}>
+                    <button className={style.botones} key={index} onClick={() => handleSelectFlyer(index)}>
                         &rarr;{  /* {index + 1} */}
                     </button>
                 ))}
