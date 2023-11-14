@@ -9,10 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD:beta-main/package.json
     "eslint": "8.53.0",
     "eslint-config-next": "14.0.2",
     "next": "14.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+=======
+    "bootstrap": "^5.3.2",
+    "next": "13.5.4",
+    "react-bootstrap": "^2.9.0",
+    "sass": "^1.69.0"
+>>>>>>> aed696b1aef3c7d50d1f6523e39b367a5be15d5f:planetaninez/package.json
   }
 }
