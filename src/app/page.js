@@ -5,9 +5,9 @@ import Navbar from './components/NavbarContainer/Navbar'
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Navbar/>
       <BetaCarrousel/>
-    </main>
+    </>
   )
 }
